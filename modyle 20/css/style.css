@@ -1,0 +1,1166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&family=Yeseva+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*  Исправленный вариант*/
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Исправленный вариант */
+:focus,
+:active {
+    outline: none;
+}
+
+/* Исправленный вариант  */
+a:focus,
+a:active {
+    outline: none;
+}
+/* Исправленный вариант  принцип DRY  */
+nav,
+footer,
+header,
+aside,
+.tick::before,
+.label,
+.feedback__form__label,
+.list__item,
+.our__clients:after {
+    display: block;
+}
+
+/* Исправленный вариант */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Исправленный вариант  */
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+/*Исправленный вариант  */
+input::-ms-clear,
+.checkbox__input {
+    display: none;
+}
+/*Исправленный вариант  */
+button {
+    cursor: pointer;
+}
+
+/*Исправленный вариант  */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+/*Исправленный вариант  */
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+/*Исправленный вариант  */
+ul li {
+    list-style: none;
+}
+/*Исправленный вариант  */
+img {
+    vertical-align: top;
+}
+
+/*Исправленный вариант  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*Исправленный вариант принцип DRY */
+.header__navigation,
+.vector,
+.header__content,
+.head-it,
+.completed-pro,
+.completed-navigation,
+.feedback__form,
+.depiction-recover,
+.application,
+.advantages__details,
+.design__styles__container,
+.feedback__card,
+.card__header,
+.card__data,
+.contacts__container,
+.piggy__bank,
+.questions__form__checkbox,
+.questions__form__checkbox label,
+.footer__content {
+    display: flex;
+}
+
+/*Исправленный вариант принцип DRY */
+.header__logo,
+.home,
+.phone,
+.title_complet,
+.header__title-secretion,
+.head:hover .design__item:hover,
+.discreption h3,
+.piggy__bank p,
+.list__item:hover,
+.adress,
+.title {
+    color: #E3B873;
+}
+
+.checkbox-label {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.tick {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+/*Исправленный вариант  */
+.tick::before {
+    content: "";
+    width: 4px;
+    height: 8px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    margin-top: -1px;
+    transition: .2s;
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox-input:checked+.tick::before {
+    opacity: 1;
+}
+
+.button {
+    background-color: #E3B873;
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 13px 33px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 15px;
+    min-width: 200px;
+    min-height: 51px;
+}
+
+/*Исправленный вариант  */
+.title_complet {
+    font-family: 'Yeseva One', cursive;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 768px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.text {
+    font-size: 18px;
+    line-height: 36px;
+    max-width: 681px;
+    max-height: 130px;
+    text-align: center;
+    margin: 34px auto;
+}
+/*Исправленный вариант  */
+.vector {
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.vector-stick {
+    margin: 0 8px;
+}
+
+
+.form h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.label {
+    color: #FFFFFF80;
+    margin-top: 48px;
+    display: block;
+}
+
+.input {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+    padding-bottom: 8px;
+    padding-top: 4px;
+    color: white;
+}
+/*Исправленный вариант  */
+.input::placeholder {
+    color: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+/*Исправленный вариант принцип DRY */
+.header,
+.completed,
+.form,
+.footer {
+    background-color: black;
+}
+
+/*Исправленный вариант  */
+.header-content {
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/*Исправленный вариант  */
+.logo {
+    color: #E3B873;
+}
+
+/*Исправленный вариант  */
+.header-navigation {
+    display: flex;
+}
+
+/*Исправленный вариант  */
+.home {
+    font-family: "Nunito Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+
+}
+/*Исправленный вариант  */
+.header-navigation__item {
+    margin-right: 47px;
+}
+/*Исправленный вариант  */
+.header-navigation__item a {
+    color: white;
+}
+/*Исправленный вариант  */
+.phone {
+    border-bottom: 1px solid #E3B873;
+}
+
+
+.button-header {
+    min-width: 160px;
+    min-height: 37px;
+    font-style: italic;
+}
+
+.hero .button {
+    font-style: italic;
+}
+
+.button-outline {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.hero {
+    background-image: url(../image/mainroom.jpg);
+    background-size: cover;
+    height: 707px;
+}
+
+/*Исправленный вариант  */
+.contaier-hero {
+    padding-top: 156px;
+}
+
+.header-title {
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 53px;
+    color: white;
+}
+
+/*Исправленный вариант  */
+.header-title-secretion {
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 53px;
+}
+
+.text-one {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    color: white;
+    margin: 20px 0 40px;
+}
+
+.completed {
+    padding-bottom: 400px;
+}
+
+/*Исправленный вариант  */
+.completed-container {
+    padding-top: 100px;
+}
+
+/*Исправленный вариант  */
+.head-it {
+    justify-content: space-between;
+    width: 679px;
+    margin-left: 630px;
+}
+
+.head {
+    font-family: 'Yeseva One', cursive;
+    font-size: 14px;
+    line-height: 19px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/*Исправленный вариант  */
+.head:hover {
+    border-bottom: 1px solid #E3B873;
+}
+
+.colortext {
+    color: rgba(227, 184, 115, 1);
+    font-family: "Yeseva One";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.4px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(227, 184, 115, 1);
+}
+
+/*Исправленный вариант  */
+.completed-pro {
+    margin-left: 128px;
+}
+
+.completed-design {
+    width: 679px;
+    height: 482px;
+    margin-top: 45px;
+
+}
+
+.complet_inside {
+    padding: 28px 8px;
+    margin-right: 50px;
+}
+
+.text1 {
+    font-size: 14px;
+    line-height: 27px;
+    color: #fff;
+    margin-top: 34px;
+}
+
+.completed_inside-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 0px;
+}
+
+.discreption h3 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: 42px;
+}
+
+.discreption span {
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
+    margin-top: 9px;
+}
+
+/*Исправленный вариант  */
+.completed-navigation {
+    margin-top: 80px;
+}
+
+.completed-arrow {
+    max-width: 41px;
+    max-height: 13px;
+}
+
+/*Исправленный вариант  */
+.arrow-left {
+    margin-right: 30px;
+}
+/*Исправленный вариант  */
+.arrow-right {
+    margin-left: 13px;
+}
+
+.completed-dot {
+    max-width: 9px;
+    max-height: 9px;
+    margin-right: 17px;
+}
+
+.portico-container {
+    text-align: center;
+    margin-top: -307px;
+}
+
+/*Исправленный вариант  */
+.portico-subtitle {
+    color: #fff;
+}
+
+.video-container {
+    position: relative;
+}
+
+.video-container .video-player {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    max-width: 55px;
+    border-top: 1.5px solid #E3B873;
+    margin: 0 auto;
+}
+
+/*Исправленный вариант  */
+.feedback-form {
+    justify-content: space-evenly;
+    padding-top: 91px;
+}
+
+/*Исправленный вариант  */
+.feedback-form-label {
+    font-size: 13px;
+    line-height: 21px;
+    color: #36363680;
+    text-align: left;
+}
+
+.feedback-form-input {
+    background: transparent;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-bottom: 8px;
+    padding-top: 4px;
+    width: 231px;
+}
+
+/*Исправленный вариант  */
+.feedback-form-input::placeholder {
+    color: black;
+}
+
+
+.feedback-form-checkbox {
+    margin-top: 33px;
+    text-align: center;
+}
+
+.feedback-form-checkbox label {
+    color: black;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.recover-subtitle {
+    text-align: center;
+    margin-top: 75px;
+}
+
+/*Исправленный вариант  */
+.depiction-recover {
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.recover-list {
+    text-align: start;
+    width: 335px;
+    height: 295px;
+    margin-top: -135px;
+    margin-left: 31px;
+    padding-left: 34px;
+    background-color: #fff;
+    position: relative;
+    width: 330px;
+    height: 286px;
+}
+
+/*Исправленный вариант  */
+.recover-list li {
+    list-style-type: disc;
+}
+
+.recover-list h3 {
+    font-size: 18px;
+    font-family: 'Yeseva One', cursive;
+    line-height: 24px;
+    margin-left: -15px;
+    padding-top: 25px;
+    padding-bottom: 13px;
+}
+
+.recover-list li {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.recover-price h3 {
+    font-size: 18px;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    line-height: 24px;
+    color: #fff;
+    background-color: #E3B873;
+    position: relative;
+    margin-top: -28px;
+    margin-left: 31px;
+    width: 228px;
+    padding: 17px;
+}
+
+/*Исправленный вариант  */
+.application {
+    margin-top: 180px;
+    justify-content: space-between;
+}
+
+.advantages {
+    background-image: url(../image/application.png);
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+}
+
+/*Исправленный вариант  */
+.advantages-details {
+    margin-left: 220px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.advantages-details h3 {
+    background-image: url(../image/circle.svg);
+    background-size: cover;
+    display: table;
+    width: 47px;
+    height: 47px;
+    padding: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.advantages-details h4 {
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: -5px;
+}
+
+.application-form {
+    width: 506px;
+    height: 509px;
+    margin-top: 35px;
+    padding: 28px 49px;
+}
+
+.application-form h3 {
+    margin-bottom: -8px;
+}
+
+/*Исправленный вариант  */
+.application-form__checkbox {
+    margin-top: 20px;
+}
+
+.application-form__button {
+    margin-top: 40px;
+    margin-left: 205px;
+    padding: 18px 22px;
+}
+
+/*Исправленный вариант  */
+.piggy-bank {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.piggy-bank img {
+    padding-top: 20px;
+}
+
+/*Исправленный вариант  */
+.piggy-bank h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.interior-design {
+    background-image: url(../image/background_disign.png);
+    background-repeat: no-repeat;
+    margin-top: 352px;
+    background-size: cover;
+}
+
+/*Исправленный вариант  */
+.interior-design__container {
+    justify-content: space-between;
+}
+
+.design-list {
+    margin-top: 130px;
+    margin-left: 100px;
+
+}
+
+.list-items {
+    margin-top: 20px;
+
+}
+
+/*Исправленный вариант  */
+.list-item {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/*Исправленный вариант  */
+.list-item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.66px;
+}
+
+.design-img {
+    display: grid;
+    grid-template: auto 1fr / auto 1fr;
+    gap: 10px;
+}
+/*Исправленный вариант  */
+.img-example1 {
+    margin-top: -40px;
+}
+/*Исправленный вариант  */
+.img-example4 {
+    margin-top: -360px;
+}
+/*Исправленный вариант  */
+.img-example3 {
+    margin-top: -112px;
+}
+/*Исправленный вариант  */
+.img-example2 {
+    margin-bottom: -40px;
+}
+/*Исправленный вариант  */
+.our-clients__container {
+    margin-top: 110px;
+}
+
+.our-clients {
+    position: relative;
+}
+
+.our-clients:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 380px;
+    background: url(../image/city.png) top;
+    opacity: .08;
+    z-index: -1;
+}
+
+/*Исправленный вариант  */
+.feedback-card {
+    justify-content: space-around;
+    column-gap: 54px;
+    margin-top: 39px;
+}
+
+.card {
+    width: 376px;
+    height: 428px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.04);
+}
+
+/*Исправленный вариант  */
+.card-header {
+    align-items: center;
+    margin-left: 25px;
+}
+
+.card-avatar {
+    border-radius: 100%;
+}
+
+.avatar-name {
+    font-family: 'Yeseva One', cursive;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 23px;
+}
+
+.card-text {
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+    margin: 40px 30px 54px 25px;
+}
+/*Исправленный вариант  */
+.card-data {
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E3B873;
+    font-family: 'Yeseva One', cursive;
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    max-width: 294px;
+    margin-top: -27px;
+}
+
+.contacts {
+    margin-top: 380px;
+    background-image: url(../image/background_contacts.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contacts-back {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding-bottom: 65px;
+}
+
+/*Исправленный вариант  */
+.contacts-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions-form {
+    width: 883px;
+    height: 445px;
+    margin-top: -222px;
+    text-align: center;
+}
+
+.questions-form h3 {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    padding-top: 34px;
+
+}
+
+.questions-form__details {
+    display: grid;
+    grid-template: 1fr 1fr / 240px 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+    column-gap: 50px;
+
+}
+
+.questions-form__details div {
+    text-align: left;
+}
+
+/*Исправленный вариант  */
+.questions-form__checkbox {
+    max-width: 520px;
+    margin: 0 auto;
+    padding-top: 55px;
+    justify-content: center;
+}
+
+/*Исправленный вариант  */
+.questions-form__checkbox label {
+    align-items: center;
+}
+
+.questions-form__button {
+    margin-top: 50px;
+}
+
+/*Исправленный вариант  */
+.adress {
+    text-align: center;
+    margin-top: 52px;
+}
+
+.communication {
+    margin-top: 26px;
+    margin-bottom: 50px;
+}
+
+.communication-email {
+    margin-right: 12px;
+}
+
+/*Исправленный вариант  */
+.footer-content {
+    justify-content: space-between;
+    height: 133px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1300px) {
+    .hide-sm {
+        display: none;
+    }
+
+    .header-content {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .main-menu,
+    .button_header {
+        display: none;
+    }
+
+    .hero {
+        height: 500px;
+        text-align: center;
+    }
+
+    .contaier-hero {
+        text-align: left;
+        padding-top: 50px;
+    }
+
+    .contaier-hero .button {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contaier-hero .button:first-of-type {
+        margin-bottom: 15px;
+    }
+  
+    /*Исправленный вариант  */
+    .completed-pro {
+        flex-direction: column;
+    }
+   /*Исправленный вариант  */
+    .complet_inside {
+        text-align: center;
+        margin-right: 0;
+    }
+   /*Исправленный вариант  */
+    .completed-design {
+        height: 300px;
+        margin-top: 100px;
+    }
+   /*Исправленный вариант  */
+    .completed_inside-1 {
+        text-align: left;
+        width: 100%;
+    }
+  /*Исправленный вариант  */
+    .completed-navigation {
+        display: none;
+    }
+  /*Исправленный вариант  */
+    .head-it {
+        display: none;
+    }
+
+    .subtitle {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+  /*Исправленный вариант  */
+    .portico-direct * {
+        transform: scale(1.2);
+    }
+
+    .video {
+        width: 100%;
+    }
+  /*Исправленный вариант  */
+    .portico {
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .feedback-form__checkbox {
+        margin: 0;
+    }
+ /*Исправленный вариант  */
+    .feedback-form,
+    .feedback-form__input::placeholder,
+    .feedback-form__checkbox {
+        flex-direction: column;
+        text-align: left;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .feedback-form__label {
+        color: #FFFFFF80;
+        font-size: 18px;
+    }
+
+    .feedback-form__input {
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #FFFFFF80;
+        font-size: 18px;
+    }
+
+    .feedback-form__checkbox span {
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+    }
+
+    .feedback-form__button {
+        margin-bottom: -60px;
+        margin-top: 0;
+    }
+  /*Исправленный вариант  */
+    .recover-direct * {
+        transform: scale(1.2);
+    }
+
+    .description-repair {
+        flex-direction: column;
+    }
+
+    .description-repair .list {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .description-repair .list img {
+        width: 100%;
+    }
+  
+    /*Исправленный вариант  */
+    .recover-list {
+        margin-left: 0;
+        box-shadow: 4px 4px 8px 0px rgba(227, 184, 115, 0.2);
+        width: 80%;
+    }
+  
+    /*Исправленный вариант  */
+    .recover-list h3 {
+        margin-left: 20px;
+    }
+
+    /*Исправленный вариант  */
+    .recover-list ul {
+        margin-left: 30px;
+    }
+  
+    /*Исправленный вариант  */
+    .application-form,
+    .our-clients {
+        display: none;
+    }
+ 
+    /*Исправленный вариант  */
+    .design-list {
+        width: 100%;
+        margin: 0;
+        padding-top: 40px;
+        margin-top: -47%;
+    }
+  
+    /*Исправленный вариант  */
+    .interior-design {
+        background: rgba(0, 0, 0, 0.85);
+        text-align: center;
+    }
+   
+    /*Исправленный вариант  */
+    .interior-design__container.design-img {
+        display: none;
+    }
+
+    .list-title {
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+    }
+   
+     /*Исправленный вариант  */
+    .interior-design .slider {
+        width: 100%;
+        background: url(../image/example1.png) center center no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .questions-form h3 {
+        font-size: 36px;
+    }
+
+    .contacts {
+        margin-top: -1px;
+    }
+
+    .questions-form {
+        background: transparent;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .questions-form__details {
+        display: block;
+        margin: 0;
+        max-width: none;
+    }
+  
+    /*Исправленный вариант  */
+    .questions-form__details,
+    .input {
+        font-size: 18px;
+    }
+
+    .questions-form__checkbox {
+        margin: 0;
+        justify-content: start;
+        padding-top: 20px;
+    }
+
+    .questions-form__checkbox span {
+        font-size: 18px;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    .map img {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .adress-subtitle {
+        line-height: 40px;
+    }
+
+    .communication * {
+        transform: scale(2);
+        margin-top: 30px;
+    }
+
+    .communication-email {
+        margin-right: 50px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1300px) {
+    .hide-lg {
+        display: none;
+    }
+}
